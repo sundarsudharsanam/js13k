@@ -1,2 +1,3 @@
 # lost-in-space
-Lost in Space - Ride the spaceship to find the way back HOME
+
+HTML5 desktop game using Canvas and JS (ES6)!
