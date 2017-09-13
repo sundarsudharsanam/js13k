@@ -341,7 +341,7 @@ let game = {
 		}
 
 		/* 
-		*	For last 5 seconds, show the LOST Planet :)
+		*	For last 5 seconds, show the HOME :)
 		*/
 		if(game.frame.screen < ( (game.duration - 5) * game.frame.refreshPerSecond )){
 			/* 
