@@ -13,6 +13,7 @@ let game = {
 	isOver: false,
 	isWon: false,
 	frequency: 0,
+	timeout: 0,
 	interval: 0,
 	duration: 360,
 	keys: {},
@@ -158,13 +159,14 @@ let game = {
 		game.isStarted = true;
 		game.frequency = setInterval(game.updateField, (1000/game.frame.refreshPerSecond));
 		game.numOfOpponents = game.typeOpponents.length;
-		setTimeout(() => {
+		game.timeout = setTimeout(() => {
 			game.isWon = true;
 			game.stop();
 		}, game.duration * 1000);
 	},
 	stop: () => {
 		clearInterval(game.frequency);
+		clearTimeout(game.timeout);
 		game.isOver = true;
 
 		setTimeout(() => {
