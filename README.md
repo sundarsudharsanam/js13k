@@ -1,3 +1,2 @@
-# lost-in-space
-
-HTML5 desktop game using Canvas and JS (ES6)!
+# js13kGames
+HTML5 and JavaScript Game Development
